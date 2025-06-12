@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:exercices_http/exercice_b.dart';
 import 'package:flutter/material.dart';
 

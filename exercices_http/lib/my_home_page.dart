@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:exercices_http/exercice_b.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -37,7 +38,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Le nombre est $reponse')
+            Text('Le nombre est $reponse'),
+            MaterialButton(
+              textColor: Colors.red,
+              child: Text('CLICkQ MOI'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ExerciceBPage(title: 'Exercice Github'),
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),
